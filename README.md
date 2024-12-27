@@ -15,9 +15,9 @@
 |Senior Partner|	8	|300000|
 |C-level|	9	|500000|
 |CEO|	10	|1000000|
-
+---
 ## Python codes for Polynomial Linear Regression
-
+---
 ## Importing the libraries
 ```python
 print(x)
