@@ -16,3 +16,51 @@
 |C-level|	9	|500000|
 |CEO|	10	|1000000|
 
+## Python codes for Polynomial Linear Regression
+
+## Importing the libraries
+```python
+print(x)
+```
+
+## Importing the dataset
+```python
+print(x)
+```
+
+## Training the Linear Regression model on the whole dataset
+```python
+print(x)
+```
+
+## Training the Polynomial Regression model on the whole dataset
+```python
+print(x)
+```
+
+## Visualising the Linear Regression results
+```python
+print(x)
+```
+
+## Visualising the Polynomial Regression results
+```python
+print(x)
+```
+
+## Visualising the Polynomial Regression results (for higher resolution and smoother curve)
+```python
+print(x)
+```
+
+## Predicting a new result with Linear Regression
+```python
+print(x)
+```
+
+## Predicting a new result with Polynomial Regression
+```python
+print(x)
+```
+
+
