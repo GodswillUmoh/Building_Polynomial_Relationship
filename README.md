@@ -3,6 +3,7 @@
 >Below is a dataset to predict the salary of an individual based on his job position. You as a data scientist is saddled with the role of predicting how much the person to be hired earn in his previous company based on his position
 
 ## Dataset
+The position is encoded to numbers in the level column, hence we will not be applying OneHotEncoder method
 |Position	|Level	|Salary|
 |---------|-------|-------|
 |Business Analyst|	1|	45000|
@@ -18,6 +19,8 @@
 ---
 ## Python codes for Polynomial Linear Regression
 ---
+[View Polynomial Regression Model Formula here, click to view](https://ibb.co/Xxg5TWs)
+
 ## Importing the libraries
 ```python
 print(x)
