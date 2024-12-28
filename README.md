@@ -4,6 +4,7 @@
 
 ## Dataset
 The position is encoded to numbers in the level column, hence we will not be applying OneHotEncoder method
+
 _Data Source: SuperDataScience Dataset_
 
 |Position	|Level	|Salary|
