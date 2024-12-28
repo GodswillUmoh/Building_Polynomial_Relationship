@@ -19,7 +19,6 @@ The position is encoded to numbers in the level column, hence we will not be app
 ---
 ## Python codes for Polynomial Linear Regression
 ---
-[View Polynomial Regression Model Formula here, click to view](https://ibb.co/Xxg5TWs)
 
 ## Importing the libraries
 ```python
@@ -37,6 +36,8 @@ print(x)
 ```
 
 ## Training the Polynomial Regression model on the whole dataset
+The first will be to create the metrics of power features, then create another to fit into the model
+[View Polynomial Regression Model Formula here, click to view](https://ibb.co/Xxg5TWs)
 ```python
 print(x)
 ```
