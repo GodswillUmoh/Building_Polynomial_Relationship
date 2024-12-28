@@ -132,4 +132,5 @@ lin_reg.predict([[6.5]])
 lin_reg_2.predict(poly_reg.fit_transform([[6.5]]))
 ```
 
+[See code results, click Here to view](https://colab.research.google.com/drive/1A4FvrP7RtiEFlPeRX1MAXRm3pj837x_B#scrollTo=uQmtnyTHFRGG)
 
