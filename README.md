@@ -76,7 +76,7 @@ plt.show()
 
 # Result the predicted salary, line is far from most points, hence, linearReg is not the best
 ```
-[See Graph Here, Click to view Graph}(https://colab.research.google.com/drive/1A4FvrP7RtiEFlPeRX1MAXRm3pj837x_B#scrollTo=KD-jHmzSIWZq)
+[See Graph Here, Click to view Graph](https://colab.research.google.com/drive/1A4FvrP7RtiEFlPeRX1MAXRm3pj837x_B#scrollTo=KD-jHmzSIWZq)
 
 ## Visualising the Polynomial Regression results
 ```python
