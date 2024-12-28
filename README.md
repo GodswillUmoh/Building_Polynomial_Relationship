@@ -103,6 +103,10 @@ plt.show()
 
 > 5. Feature Selection: Avoid adding irrelevant or redundant features that can complicate the model unnecessarily.
 
+## Visualization Example
+> + Underfitting: A straight line doesn’t capture the curve in the data.
+> + Optimal Fit: A moderately curved line follows the general trend.
+> + Overfitting: A highly wiggly curve passes through every point but fails to generalize.
 
 ## Visualising the Polynomial Regression results
 ```python
