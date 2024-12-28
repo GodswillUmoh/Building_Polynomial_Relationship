@@ -1,4 +1,4 @@
-# Building_Polynomial_Linear_Regression
+# Building_Polynomial_Linear_Regression (Non Linear Regression Model)
 ## Case Study
 >Below is a dataset to predict the salary of an individual based on his job position. You as a data scientist is saddled with the role of predicting how much the person to be hired earn in his previous company based on his position
 
