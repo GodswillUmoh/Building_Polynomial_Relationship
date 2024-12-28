@@ -65,8 +65,18 @@ lin_reg_2.fit(X_poly, y)
 
 ## Visualising the Linear Regression results
 ```python
-print(x)
+# displaying the real values
+plt.scatter(X, y, color = 'red')
+# plot the linear line
+plt.plot(X, lin_reg.predict(X), color = 'blue')
+plt.title('Linear plot')
+plt.xlabel('Position Level')
+plt.ylabel('Salary')
+plt.show()
+
+# Result the predicted salary, line is far from most points, hence, linearReg is not the best
 ```
+[See Graph Here, Click to view Graph}(https://colab.research.google.com/drive/1A4FvrP7RtiEFlPeRX1MAXRm3pj837x_B#scrollTo=KD-jHmzSIWZq)
 
 ## Visualising the Polynomial Regression results
 ```python
