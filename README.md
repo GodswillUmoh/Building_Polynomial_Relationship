@@ -110,22 +110,26 @@ plt.show()
 
 ## Visualising the Polynomial Regression results
 ```python
-print(x)
-```
-
-## Visualising the Polynomial Regression results (for higher resolution and smoother curve)
-```python
-print(x)
+# displaying the real values
+plt.scatter(X, y, color = 'red')
+# plot the linear line
+plt.plot(X, lin_reg_2.predict(X_poly), color = 'blue')
+plt.title('Linear plot')
+plt.xlabel('Position Level')
+plt.ylabel('Salary')
+plt.show()
 ```
 
 ## Predicting a new result with Linear Regression
 ```python
-print(x)
+# 2D array is used to display prediction to 6.5
+# use [[]], the first dimension [] is for rows, second [] is for column
+lin_reg.predict([[6.5]])
 ```
 
 ## Predicting a new result with Polynomial Regression
 ```python
-print(x)
+lin_reg_2.predict(poly_reg.fit_transform([[6.5]]))
 ```
 
 
