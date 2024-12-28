@@ -57,7 +57,10 @@ The first will be to create the metrics of power features, then create another t
 # metric features without the x1, hence we need to combine to have full
 
 from sklearn.preprocessing import PolynomialFeatures
-poly_reg = PolynomialFeatures(degree= 2)
+# Note the more the nth value, the more the curve will be smooth with better results, try 4
+#poly_reg = PolynomialFeatures(degree= 2)
+
+poly_reg = PolynomialFeatures(degree= 4)
 X_poly = poly_reg.fit_transform(X)
 lin_reg_2 = LinearRegression()
 lin_reg_2.fit(X_poly, y)
