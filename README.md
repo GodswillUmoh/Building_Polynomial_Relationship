@@ -58,6 +58,7 @@ The first will be to create the metrics of power features, then create another t
 
 from sklearn.preprocessing import PolynomialFeatures
 # Note the more the nth value, the more the curve will be smooth with better results, try 4
+3 this will be: bo + B1X1 + b2X1(power2) + b3X1(power3) + b4X4(power4)
 #poly_reg = PolynomialFeatures(degree= 2)
 
 poly_reg = PolynomialFeatures(degree= 4)
