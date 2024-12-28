@@ -58,7 +58,7 @@ The first will be to create the metrics of power features, then create another t
 
 from sklearn.preprocessing import PolynomialFeatures
 # Note the more the nth value, the more the curve will be smooth with better results, try 4
-3 this will be: bo + B1X1 + b2X1(power2) + b3X1(power3) + b4X4(power4)
+This will be: bo + B1X1 + b2X1(power2) + b3X1(power3) + b4X4(power4)
 #poly_reg = PolynomialFeatures(degree= 2)
 
 poly_reg = PolynomialFeatures(degree= 4)
@@ -81,6 +81,28 @@ plt.show()
 # Result the predicted salary, line is far from most points, hence, linearReg is not the best
 ```
 [See Graph Here, Click to view Graph](https://colab.research.google.com/drive/1A4FvrP7RtiEFlPeRX1MAXRm3pj837x_B#scrollTo=KD-jHmzSIWZq)
+
+## What is Overfitting in Polynomial Regression?
+> Overfitting happens when a model becomes too complex and starts capturing noise (random variations) in the training data rather than the actual underlying pattern. In polynomial regression, this often occurs when you use a very high-degree polynomial to fit the data.
+
+## How Overfitting Happens
+> + High Degree Polynomial: Adding too many powers of 𝑥 (e.g., 𝑥3,𝑥4,𝑥5) allows the model to fit every small variation in the training data.
+> + Poor Generalization: While the model fits the training data perfectly, it fails to make accurate predictions on new, unseen data because it has "memorized" the training data rather than learning the overall trend.
+
+## Example
+> Imagine you have 10 data points shaped like a smooth curve, but you fit a 9th-degree polynomial to it. The curve will pass exactly through all the points, but it will oscillate wildly in between, making poor predictions for new data.
+
+## How to Prevent Overfitting
+> 1. Reduce Polynomial Degree: Use a lower-degree polynomial that captures the overall trend without fitting every fluctuation.
+
+> 2. Cross-Validation: Split your data into training and testing sets (or use k-fold cross-validation) to ensure the model generalizes well.
+
+> 3. Regularization: Apply techniques like Ridge Regression or Lasso Regression to penalize large coefficients, discouraging overfitting.
+
+> 4. Add More Data: Increasing the size of the dataset can help the model learn more robust patterns.
+
+> 5. Feature Selection: Avoid adding irrelevant or redundant features that can complicate the model unnecessarily.
+
 
 ## Visualising the Polynomial Regression results
 ```python
