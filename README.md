@@ -46,8 +46,21 @@ lin_reg.fit(X, y)
 The first will be to create the metrics of power features, then create another to fit into the model
 
 [View Polynomial Regression Model Formula here, click to view](https://ibb.co/Xxg5TWs)
+
 ```python
-print(x)
+# it is kind of a preprocessing phase to create the square metrics, 
+# hence we import from sklearn.preprocessing
+# the final model will be a combination of the linear model and the metric features
+# degree is the parameter for the n in X(power n) in the formula
+# fit_transform transform the x1, and x2 square as second features, if degree is 3,
+# it will be x1, x1 square, x1 power 3, the fit_transform when executed will give only the
+# metric features without the x1, hence we need to combine to have full
+
+from sklearn.preprocessing import PolynomialFeatures
+poly_reg = PolynomialFeatures(degree= 2)
+X_poly = poly_reg.fit_transform(X)
+lin_reg_2 = LinearRegression()
+lin_reg_2.fit(X_poly, y)
 ```
 
 ## Visualising the Linear Regression results
