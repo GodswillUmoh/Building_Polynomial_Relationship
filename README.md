@@ -22,21 +22,29 @@ The position is encoded to numbers in the level column, hence we will not be app
 
 ## Importing the libraries
 ```python
-print(x)
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
 ```
 
 ## Importing the dataset
 ```python
-print(x)
+dataset = pd.read_csv('Position_Salaries.csv')
+#exclude the first column
+X = dataset.iloc[:, 1:-1].values
+y = dataset.iloc[:, -1].values
 ```
 
 ## Training the Linear Regression model on the whole dataset
 ```python
-print(x)
+from sklearn.linear_model import LinearRegression
+lin_reg = LinearRegression()
+lin_reg.fit(X, y)
 ```
 
 ## Training the Polynomial Regression model on the whole dataset
 The first will be to create the metrics of power features, then create another to fit into the model
+
 [View Polynomial Regression Model Formula here, click to view](https://ibb.co/Xxg5TWs)
 ```python
 print(x)
